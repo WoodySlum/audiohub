@@ -30,14 +30,15 @@ var path = require('path');
 
 var audio = new audiohub();
 audio.play(path.resolve('./ThatTwang.ogg'));
-
-
 ```
 
 #EXAMPLES
 More examples in the [examples](https://github.com/active9/audiohub/tree/master/examples) folder on the github repo.
 
 ~Enjoy!
+
+#REQUIREMENTS
+- Requires [mplayer](http://www.mplayerhq.hu/design7/news.html) installed and configured within the system environment. (Windows users will need to manually add mplayer to the Environment Variable Path.)
 
 #CONTRIB
 
