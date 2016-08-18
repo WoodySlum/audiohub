@@ -1,7 +1,7 @@
 {
   "name": "audiohub",
-  "version": "0.0.2",
-  "description": "Command Line Audio Playback From The Terminal",
+  "version": "0.1.0",
+  "description": "Command Line Audio Playback From The Terminal Or Your NodeJS App",
   "main": "index.js",
   "bin": {
     "audiohub": "./bin/audiohub"
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Active 9 LL.",
+  "author": "Active 9 LLC.",
   "license": "MIT",
   "dependencies": {},
   "directories": {

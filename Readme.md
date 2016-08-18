@@ -1,7 +1,7 @@
 #AudioHub
 ![Command Line Audio Playback From The Terminal](https://raw.githubusercontent.com/active9/audiohub/master/audiohub.png)
 
-AudioHub is a simple mplayer wrapper written in NodeJS.
+AudioHub is a simple mplayer wrapper written in NodeJS. That provides command line audio playback from the terminal or your NodeJS app.
 
 #INSTALLING
 Using Git:
@@ -23,13 +23,27 @@ audiohub path_to_a_music_file.mp3
 ```
 
 #MODULE
-Above may run included as a module in your projects.
+AudioHub may run included as a module in your projects.
+
 ```js
 var audiohub = require('audiohub');
 var path = require('path');
 
 var audio = new audiohub();
-audio.play(path.resolve('./ThatTwang.ogg'));
+audio.play(path.resolve('./track.ogg'));
+```
+
+You may also specify a custom player if you don't have mplayer on the system.
+In the example below we will playback using vlc instead of mplayer.
+
+```js
+var audiohub = require('../lib/audiohub.js');
+var path = require('path');
+
+var audio = new audiohub({
+	player: 'vlc'
+});
+audio.play(path.resolve('./track.ogg'));
 ```
 
 #EXAMPLES

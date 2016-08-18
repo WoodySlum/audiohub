@@ -2,6 +2,6 @@ var audiohub = require('../lib/audiohub.js');
 var path = require('path');
 
 var audio = new audiohub({
-	player: 'vlc'
+  player: 'vlc'
 });
-audio.play(path.resolve('./ThatTwang.ogg'));
+audio.play(path.resolve('./track.ogg'));
